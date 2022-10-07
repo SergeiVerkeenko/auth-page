@@ -1,0 +1,146 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    display: flex;
+
+}
+
+.left {
+    width: 710px;
+    height: 990px;
+    background: #E2F0FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img {
+    background-image: url(./assets/1.svg);
+    width: 530px;
+    height: 391px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.left h1 {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #292731;
+    width: 400px;
+    height: 68px;
+    margin: 70px auto 0;
+}
+
+.left p {
+    width: 386px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #455360;
+    margin: 70px auto 0;
+}
+
+.right {
+    width: 710px;
+    height: 990px;
+    background: white;
+    margin: auto 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-emodzi {
+    width: 36px;
+    height: 36px;
+    /* margin-top: 170px; */
+    background-image: url(./assets/emodzi.svg);
+}
+
+.right h1 {
+    width: 239px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #292731;
+    margin-top: 20px;
+}
+
+.right h2 {
+    width: 292px;
+    height: 27px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #292731;
+    margin-top: 15px;
+}
+
+.right h4 {
+    width: 199px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #455360;
+    margin-top: 60px;
+}
+
+.right p {
+    width: 199px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #455360;
+    margin-top: 30px;
+}
+
+.input-email {
+    width: 440px;
+    height: 48px;
+    background: #ECF2F7;
+    border-radius: 4px;
+    margin-top: 10px;
+
+}
+
+.input-password {
+    width: 440px;
+    height: 48px;
+    background: #ECF2F7;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 440px;
+    height: 54px;
+    background: #4C70FF;
+    border-radius: 8px;
+    margin-top: 45px;
+}
+
+.input-password-check {
+    width: 440px;
+    height: 48px;
+    background: #ECF2F7;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.right h3 {
+    width: 400px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #292731;
+    text-align: center;
+    margin: 19px;
+}
+
