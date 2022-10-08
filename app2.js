@@ -1,10 +1,9 @@
 const btn = document.querySelector('.btn');
 
-function checkEnter(inputEmail, inputPassword) {
-
+function checkEnter(inputEmail, inputPassword, inputPasswordCheck) {
     try {
         if (!/^\+[0-9]{12}|^[\w\.\_]+@[a-z]+\.[a-z]{2,4}$/g.test(inputEmail)) throw new Error('Не корректный e-mail')
-        if (!/[0-9]/g.test(inputPassword)) throw new Error('Не корректный пароль')
+        if (!(inputPasswordCheck == inputPassword)) throw new Error('Пароли не совпадают')
         return alert('Вы успешно зарегистрированы')
 
     } catch (error) {
@@ -13,8 +12,8 @@ function checkEnter(inputEmail, inputPassword) {
 }
 
 btn.addEventListener('click', () => {
+    const inputPasswordCheck = document.querySelector('.input-password-check').value
     const inputEmail = document.querySelector('.input-email').value
     const inputPassword = document.querySelector('.input-password').value
-    checkEnter(inputEmail, inputPassword)
+    checkEnter(inputEmail, inputPassword, inputPasswordCheck)
 })
-
