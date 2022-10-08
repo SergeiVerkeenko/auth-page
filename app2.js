@@ -17,3 +17,15 @@ btn.addEventListener('click', () => {
     const inputPassword = document.querySelector('.input-password').value
     checkEnter(inputEmail, inputPassword, inputPasswordCheck)
 })
+
+btn.addEventListener('mouseover', () => {
+    let flag = true
+    if (flag) {
+        flag = false
+        btn.style = 'background: #526fe2;';
+    } else {
+        flag = true
+        btn.style = ' background: #4C70FF;';
+    }
+
+})
