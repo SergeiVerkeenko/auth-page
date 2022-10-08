@@ -7,7 +7,8 @@
 
 body {
     display: flex;
-
+    /* width: 1200px;
+    margin: auto; */
 }
 
 .left {
@@ -61,7 +62,6 @@ body {
 .img-emodzi {
     width: 36px;
     height: 36px;
-    /* margin-top: 170px; */
     background-image: url(./assets/emodzi.svg);
 }
 
@@ -82,7 +82,8 @@ body {
     color: #292731;
     margin-top: 15px;
 }
-.right h4{
+
+.right h4 {
     width: 199px;
     height: 24px;
     font-weight: 500;
@@ -90,6 +91,7 @@ body {
     color: #455360;
     margin-top: 60px;
 }
+
 .right p {
     width: 199px;
     height: 24px;
@@ -132,4 +134,20 @@ body {
     color: #292731;
     text-align: center;
     margin: 19px;
+}
+
+.email-img {
+    width: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-info {
+    margin-top: 70px;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/information.svg);
 }

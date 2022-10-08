@@ -19,13 +19,9 @@ btn.addEventListener('click', () => {
 })
 
 btn.addEventListener('mouseover', () => {
-    let flag = true
-    if (flag) {
-        flag = false
-        btn.style = 'background: #526fe2;';
-    } else {
-        flag = true
-        btn.style = ' background: #4C70FF;';
-    }
+    btn.style = 'background: #526fe2;';
+})
 
+btn.addEventListener('mouseout', () => {
+    btn.style = 'background: #4C70FF;';
 })

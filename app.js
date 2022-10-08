@@ -18,3 +18,10 @@ btn.addEventListener('click', () => {
     checkEnter(inputEmail, inputPassword)
 })
 
+btn.addEventListener('mouseover', () => {
+    btn.style = 'background: #526fe2;';
+})
+
+btn.addEventListener('mouseout', () => {
+    btn.style = 'background: #4C70FF;';
+})
