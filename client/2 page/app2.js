@@ -10,14 +10,28 @@ function checkEnter(inputEmail, inputPassword, inputPasswordCheck) {
     }
 }
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', async () => {
     const inputPasswordCheck = document.querySelector('.input-password-check').value
     const inputEmail = document.querySelector('.input-email').value
     const inputPassword = document.querySelector('.input-password').value
     checkEnter(inputEmail, inputPassword, inputPasswordCheck)
-    document.querySelector('.input-password-check').value = ''
-    document.querySelector('.input-email').value = ''
-    document.querySelector('.input-password').value = ''
+
+    const response = await fetch(`http://localhost:8000/api/reg`, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            email: inputEmail,
+            pwd: inputPassword
+        })
+    })
+
+    console.log(response);
+
+    inputPasswordCheck = ''
+    inputEmail = ''
+    inputPassword = ''
     return alert('Вы успешно зарегистрированы')
 })
 

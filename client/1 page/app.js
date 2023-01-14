@@ -15,6 +15,11 @@ btn.addEventListener('click', () => {
     const inputEmail = document.querySelector('.input-email').value
     const inputPassword = document.querySelector('.input-password').value
     checkEnter(inputEmail, inputPassword)
+
+
+
+
+    
     document.querySelector('.input-email').value = '';
     document.querySelector('.input-password').value = ''
     return alert('Вы успешно зарегистрированы')
